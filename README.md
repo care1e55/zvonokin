@@ -14,6 +14,12 @@ or `requirements.txt`:
 pip install -e requirements.txt
 ```
 
+Download STT model:
+```bash
+curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.9.3/deepspeech-0.9.3-models.pbmm
+curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.9.3/deepspeech-0.9.3-models.scorer
+```
+
 ### Usage
 Command line arguments can be viewed with `--help` option:
 ```bash
