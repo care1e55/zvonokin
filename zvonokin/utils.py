@@ -16,7 +16,7 @@ def modify_audio(audio: AudioSegment, speed: float, volume: int) -> AudioSegment
     return audio
 
 
-def stt(audio: wave.Wave_read, model: deepspeech.Model, *args, **kwargs) -> Dict[str, str]:
+def stt(audio: wave.Wave_read, model: deepspeech.Model) -> Dict[str, str]:
     audio = np.frombuffer(audio.readframes(audio.getnframes()), np.int16)
     text = model.stt(audio)
     return {"text": text}

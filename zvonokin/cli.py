@@ -10,9 +10,9 @@ from pydantic_settings import BaseSettings
 
 
 class AudioSettings(BaseSettings):
-    stt_model_path: Path
-    modify_result_path: Path
-    stt_result_path: Path
+    stt_model_path: Path = Path("resources/deepspeech-0.9.3-models.pbmm")
+    modify_result_path: Path = Path("resources/modify_result.wav")
+    stt_result_path: Path = Path("resources/stt_result.json")
 
     class Config:
         env_prefix = 'AUDIO_'

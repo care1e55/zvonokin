@@ -26,6 +26,14 @@ Command line arguments can be viewed with `--help` option:
 python zvonokin/cli.py --help
 ```
 
+Set up arguments:
+```bash
+export AUDIO_STT_MODEL_PATH="resources/deepspeech-0.9.3-models.pbmm"
+export AUDIO_MODIFY_RESULT_PATH="resources/modify_result.wav"
+export AUDIO_STT_RESULT_PATH="resources/stt_result.json"
+```
+
+
 ### Examples
 
 #### Modify audio
