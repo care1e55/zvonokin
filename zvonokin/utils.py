@@ -31,7 +31,6 @@ def stt_audio(audio_path: str, model: deepspeech.Model) -> Dict[str, str]:
         fs_new, audio = convert_samplerate(audio_path, desired_sample_rate)
     else:
         audio = np.frombuffer(audio.readframes(audio.getnframes()), np.int16)
-    audio = np.frombuffer(audio.readframes(audio.getnframes()), np.int16)
     text = model.stt(audio)
     return {"text": text}
 
