@@ -1,10 +1,8 @@
-from pathlib import Path
 from pydub import AudioSegment
 
 import typer as typer
 
 from zvonokin.utils import modify_audio, write_json, stt_audio
-import wave
 import deepspeech
 from pydantic_settings import BaseSettings
 
