@@ -36,7 +36,7 @@ export AUDIO_STT_RESULT_PATH="resources/stt_result.json"
 #### Modify audio
 
 ```bash
-zvonokin modify-audio --path 'resources/data.wav' --velocity 1.25 --volume 10
+zvonokin modify --path 'resources/data.wav' --velocity 1.25 --volume 10
 ```
 
 #### STT
