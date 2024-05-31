@@ -19,7 +19,7 @@ curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.9.3/deepspee
 ### Usage
 Command line arguments can be viewed with `--help` option:
 ```bash
-python zvonokin/cli.py --help
+zvonokin --help
 ```
 
 Set up arguments:
@@ -36,7 +36,7 @@ export AUDIO_STT_RESULT_PATH="resources/stt_result.json"
 #### Modify audio
 
 ```bash
-zvonokin modify audio --path 'resources/data.wav' --velocity 1.25 --volume 10
+zvonokin modify-audio --path 'resources/data.wav' --velocity 1.25 --volume 10
 ```
 
 #### STT
