@@ -9,10 +9,6 @@ Packages can be installed via `poetry`:
 poetry shell
 poetry install
 ```
-or `requirements.txt`:
-```bash
-pip install -e requirements.txt
-```
 
 Download STT model:
 ```bash
