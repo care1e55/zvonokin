@@ -36,11 +36,11 @@ export AUDIO_STT_RESULT_PATH="resources/stt_result.json"
 #### Modify audio
 
 ```bash
-python zvonokin/cli.py modify --path 'resources/data.wav' --velocity 1.25 --volume 10
+zvonokin modify audio --path 'resources/data.wav' --velocity 1.25 --volume 10
 ```
 
 #### STT
 
 ```bash
-python zvonokin/cli.py stt --path 'resources/data.wav'
+zvonokin stt --path 'resources/data.wav'
 ```
