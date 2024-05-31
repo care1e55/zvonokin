@@ -4,12 +4,6 @@ STT and modify audio
 
 ### Installation:
 
-Prerequisites:
-```bash
-sudo apt install sox
-sudo apt install ffmpeg
-```
-
 Packages can be installed via `poetry`: 
 ```bash
 poetry shell
@@ -25,7 +19,7 @@ curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.9.3/deepspee
 ### Usage
 Command line arguments can be viewed with `--help` option:
 ```bash
-zvonokin --help
+python zvonokin/cli.py --help
 ```
 
 Set up arguments:
@@ -36,16 +30,17 @@ export AUDIO_MODIFY_RESULT_PATH="resources/modify_result.wav"
 export AUDIO_STT_RESULT_PATH="resources/stt_result.json"
 ```
 
+
 ### Examples
 
 #### Modify audio
 
 ```bash
-zvonokin modify --path 'resources/test.wav' --velocity 1.25 --volume 10
+zvonokin modify audio --path 'resources/data.wav' --velocity 1.25 --volume 10
 ```
 
 #### STT
 
 ```bash
-zvonokin stt --path 'resources/test.wav'
+zvonokin stt --path 'resources/data.wav'
 ```
